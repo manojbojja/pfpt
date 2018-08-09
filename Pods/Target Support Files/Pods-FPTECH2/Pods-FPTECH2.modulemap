@@ -1,0 +1,6 @@
+framework module Pods_FPTECH2 {
+  umbrella header "Pods-FPTECH2-umbrella.h"
+
+  export *
+  module * { export * }
+}

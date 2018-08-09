@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F36294A211C81EB00A532B9 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F362949211C81EB00A532B9 /* Medicine.swift */; };
+		6F36294C211C828700A532B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36294B211C828700A532B9 /* Constants.swift */; };
+		6F36294E211C841300A532B9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36294D211C841300A532B9 /* TableViewCell.swift */; };
+		6F362950211C89EA00A532B9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36294F211C89EA00A532B9 /* DetailsViewController.swift */; };
 		6F8944F0211C51C7000191D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8944EF211C51C7000191D7 /* AppDelegate.swift */; };
 		6F8944F2211C51C7000191D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8944F1211C51C7000191D7 /* ViewController.swift */; };
 		6F8944F5211C51C7000191D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F8944F3211C51C7000191D7 /* Main.storyboard */; };
 		6F8944F7211C51C8000191D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8944F6211C51C8000191D7 /* Assets.xcassets */; };
 		6F8944FA211C51C8000191D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F8944F8211C51C8000191D7 /* LaunchScreen.storyboard */; };
+		C08AA12A173518290BE30D4E /* Pods_FPTECH2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71700A82CAD4C3C731FB346 /* Pods_FPTECH2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C63FDBCD6FE97F0A0EA6722 /* Pods-FPTECH2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPTECH2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FPTECH2/Pods-FPTECH2.debug.xcconfig"; sourceTree = "<group>"; };
+		6F362949211C81EB00A532B9 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		6F36294B211C828700A532B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6F36294D211C841300A532B9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6F36294F211C89EA00A532B9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		6F8944EC211C51C7000191D7 /* FPTECH2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPTECH2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8944EF211C51C7000191D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F8944F1211C51C7000191D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		6F8944F6211C51C8000191D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F8944F9211C51C8000191D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F8944FB211C51C8000191D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD41254864B161E8E6F5DD0 /* Pods-FPTECH2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPTECH2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FPTECH2/Pods-FPTECH2.release.xcconfig"; sourceTree = "<group>"; };
+		F71700A82CAD4C3C731FB346 /* Pods_FPTECH2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FPTECH2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08AA12A173518290BE30D4E /* Pods_FPTECH2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49BF86D6E48CD06FDC32275D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F71700A82CAD4C3C731FB346 /* Pods_FPTECH2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56D5F473A7DE720B4400D38F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C63FDBCD6FE97F0A0EA6722 /* Pods-FPTECH2.debug.xcconfig */,
+				9BD41254864B161E8E6F5DD0 /* Pods-FPTECH2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6F8944E3211C51C7000191D7 = {
 			isa = PBXGroup;
 			children = (
 				6F8944EE211C51C7000191D7 /* FPTECH2 */,
 				6F8944ED211C51C7000191D7 /* Products */,
+				56D5F473A7DE720B4400D38F /* Pods */,
+				49BF86D6E48CD06FDC32275D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,42 @@
 		6F8944EE211C51C7000191D7 /* FPTECH2 */ = {
 			isa = PBXGroup;
 			children = (
+				6F894503211C51DB000191D7 /* Views */,
+				6F894502211C51D6000191D7 /* Models */,
+				6F894501211C51CD000191D7 /* Controllers */,
 				6F8944EF211C51C7000191D7 /* AppDelegate.swift */,
-				6F8944F1211C51C7000191D7 /* ViewController.swift */,
 				6F8944F3211C51C7000191D7 /* Main.storyboard */,
 				6F8944F6211C51C8000191D7 /* Assets.xcassets */,
 				6F8944F8211C51C8000191D7 /* LaunchScreen.storyboard */,
 				6F8944FB211C51C8000191D7 /* Info.plist */,
+				6F36294B211C828700A532B9 /* Constants.swift */,
 			);
 			path = FPTECH2;
+			sourceTree = "<group>";
+		};
+		6F894501211C51CD000191D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F8944F1211C51C7000191D7 /* ViewController.swift */,
+				6F36294F211C89EA00A532B9 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6F894502211C51D6000191D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F362949211C81EB00A532B9 /* Medicine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F894503211C51DB000191D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F36294D211C841300A532B9 /* TableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F8944FE211C51C8000191D7 /* Build configuration list for PBXNativeTarget "FPTECH2" */;
 			buildPhases = (
+				053DF43088191C3E1D539C13 /* [CP] Check Pods Manifest.lock */,
 				6F8944E8211C51C7000191D7 /* Sources */,
 				6F8944E9211C51C7000191D7 /* Frameworks */,
 				6F8944EA211C51C7000191D7 /* Resources */,
+				261611C6E379EDFD7CEA3F35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +192,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		053DF43088191C3E1D539C13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FPTECH2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		261611C6E379EDFD7CEA3F35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FPTECH2/Pods-FPTECH2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FPTECH2/Pods-FPTECH2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F8944E8211C51C7000191D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F36294C211C828700A532B9 /* Constants.swift in Sources */,
 				6F8944F2211C51C7000191D7 /* ViewController.swift in Sources */,
+				6F36294E211C841300A532B9 /* TableViewCell.swift in Sources */,
+				6F362950211C89EA00A532B9 /* DetailsViewController.swift in Sources */,
 				6F8944F0211C51C7000191D7 /* AppDelegate.swift in Sources */,
+				6F36294A211C81EB00A532B9 /* Medicine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +383,7 @@
 		};
 		6F8944FF211C51C8000191D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C63FDBCD6FE97F0A0EA6722 /* Pods-FPTECH2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +401,7 @@
 		};
 		6F894500211C51C8000191D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD41254864B161E8E6F5DD0 /* Pods-FPTECH2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
