@@ -29,7 +29,7 @@
                                     <action selector="toggleClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="UXx-fI-rZJ"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-UC-jh6">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-UC-jh6">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -68,6 +68,12 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xQH-oe-X0E">
                                 <rect key="frame" x="177.5" y="323" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orP-Zm-oiE">
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -77,6 +83,8 @@
                             <constraint firstItem="xQH-oe-X0E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TBk-qC-3cS"/>
                             <constraint firstItem="ffZ-UC-jh6" firstAttribute="top" secondItem="9km-Ec-ccY" secondAttribute="bottom" constant="8" id="TSJ-pK-XmV"/>
                             <constraint firstItem="ffZ-UC-jh6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WUg-mj-q8U"/>
+                            <constraint firstItem="orP-Zm-oiE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X6X-2j-jKa"/>
+                            <constraint firstItem="orP-Zm-oiE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4m-6D-383"/>
                             <constraint firstItem="ffZ-UC-jh6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dpz-xm-Mfy"/>
                             <constraint firstItem="9km-Ec-ccY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mvV-HX-gHw"/>
                             <constraint firstItem="9km-Ec-ccY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="wPj-iU-2SV"/>
@@ -85,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="xQH-oe-X0E" id="EFV-Vq-483"/>
+                        <outlet property="errorLabel" destination="orP-Zm-oiE" id="HNK-Fe-Xae"/>
                         <outlet property="tableView" destination="ffZ-UC-jh6" id="TU4-3X-WTy"/>
                         <outlet property="toggleBar" destination="9km-Ec-ccY" id="KCd-UT-2CY"/>
                         <segue destination="UbO-PO-rqK" kind="show" identifier="detailsSegue" id="Bjv-PA-n2e"/>

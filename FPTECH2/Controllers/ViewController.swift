@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var toggleBar: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var errorLabel: UILabel!
+    
     
     private var medicineDict = [Medicine]()
     private var typeDict = [Medicine]()
@@ -28,10 +30,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.downloadTableData {
+        if Connectivity.isConnectedToInternet{
+            self.downloadTableData {
+                self.activityIndicator.stopAnimating()
+                self.updateUi()
+            }
+        }else{
             self.activityIndicator.stopAnimating()
-            self.updateUi()
+            self.tableView.isHidden = true
+            self.errorLabel.text = "\(ERROR_NO_INTERNET)"
+            self.errorLabel.isHidden = false
         }
+        
     }
     
     @IBAction func toggleClicked(_ sender: Any) {
@@ -40,8 +50,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func updateUi(){
-        self.tableView.reloadData()
-        self.tableView.tableFooterView = UIView()
+        
+        if medicineDict.count == 0{
+            self.errorLabel.text = "\(ERROR_JSON_PARSE)"
+            self.errorLabel.isHidden = false
+            self.tableView.isHidden = true
+        }else{
+            self.tableView.isHidden = false
+            self.errorLabel.isHidden = !self.errorLabel.isHidden
+            self.tableView.reloadData()
+            self.tableView.tableFooterView = UIView()
+        }
+        
     }
     
     
